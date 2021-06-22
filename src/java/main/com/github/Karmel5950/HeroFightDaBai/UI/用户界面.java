@@ -1,46 +1,17 @@
 package com.github.Karmel5950.HeroFightDaBai.UI;
 
-import com.github.Karmel5950.HeroFightDaBai.HeroFightDaBai;
-
 import java.util.Scanner;
 
 public class 用户界面 {
+    public static 主界面 主界面 = new 主界面();
+    public static 人物属性界面 人物属性界面 = new 人物属性界面();
+    public static 储存游戏界面 储存游戏界面 = new 储存游戏界面();
+    public static 背包界面 背包界面 = new 背包界面();
+    public static 行为界面 行为界面 = new 行为界面();
+    public static 读取游戏界面 读取游戏界面 = new 读取游戏界面();
+    public static 退出游戏界面 退出游戏界面 = new 退出游戏界面();
+    public static 非法输入界面 非法输入界面 = new 非法输入界面();
+    public static 开始界面 开始界面 = new 开始界面();
 
-    public static void 开始界面(){
-
-        boolean 已输入 = false;
-        Scanner scanner = new Scanner(System.in);
-        while (!已输入){
-            System.out.println("1.新的游戏\n2.读取游戏\n3.退出游戏");
-            if (scanner.hasNextLine()) {
-                String str1 = scanner.nextLine();
-                    switch (str1){
-                        case  "1":
-                            System.out.println("进入新的游戏！");
-                            HeroFightDaBai.初始化();
-                            已输入 = true;
-                            break;
-                        case  "2":
-                            System.out.println("读取游戏！");
-                            已输入 = true;
-                            break;
-                        case  "3":
-                            System.out.println("退出游戏！");
-                            已输入 = true;
-                            break;
-                        default:
-                            System.out.println("输出的值非法，请重新输入！");
-                            break;
-                    }
-                }
-        }
-        scanner.close();
-    }
-
-    public static void 主界面(){
-
-        System.out.println("1.行为\n2.背包\n3.人物属性\n4.储存游戏\n5.读取游戏\"\n6.返回开始界面");
-
-    }
 
 }

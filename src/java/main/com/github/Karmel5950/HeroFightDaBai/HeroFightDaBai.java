@@ -4,14 +4,25 @@ import com.github.Karmel5950.HeroFightDaBai.Battle.战斗;
 import com.github.Karmel5950.HeroFightDaBai.Creature.勇者;
 import com.github.Karmel5950.HeroFightDaBai.Creature.生物;
 import com.github.Karmel5950.HeroFightDaBai.UI.用户界面;
+import com.github.Karmel5950.HeroFightDaBai.UI.界面;
 
 public class HeroFightDaBai {
+    static 界面 界面导向 = 用户界面.开始界面;
+    public static 界面 界面导向历史 = 用户界面.开始界面;
+    public static  boolean 运行中 = true;
+    public static 勇者 勇者;
     public static void main(String[] args) {
-        用户界面.开始界面();
+        while (运行中){
+            界面导向器(界面导向);
+        }
     }
 
-    public static void 初始化(){
-        勇者 勇者 = new 勇者();
-        System.out.println("勇者诞生了，他的生命值为:" + 勇者.生命值最大值);
+
+
+    public static void 界面导向器(界面 输入界面){
+        界面导向 = 输入界面.打开界面();
+        界面导向历史 = 输入界面;
     }
+
+
 }
