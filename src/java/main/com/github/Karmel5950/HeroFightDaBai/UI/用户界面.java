@@ -12,6 +12,8 @@ public class 用户界面 {
     public static 退出游戏界面 退出游戏界面 = new 退出游戏界面();
     public static 非法输入界面 非法输入界面 = new 非法输入界面();
     public static 开始界面 开始界面 = new 开始界面();
+    public static 装备界面 装备界面 = new 装备界面();
+    public static 卸下装备界面 卸下装备界面 = new 卸下装备界面();
 
 
 }

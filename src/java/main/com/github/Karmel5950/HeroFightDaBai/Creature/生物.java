@@ -1,6 +1,8 @@
 package com.github.Karmel5950.HeroFightDaBai.Creature;
 
-public abstract class 生物 {
+import java.io.Serializable;
+
+public abstract class 生物 implements Serializable {
 
     //成员变量
     private double 生命值最大值;
@@ -99,5 +101,9 @@ public abstract class 生物 {
 
     public int get最大经验值(){
         return (int)Math.pow(1.1,this.等级)*10;
+    }
+
+    public void 提升等级(){
+        this.等级 += 1 ;
     }
 }
