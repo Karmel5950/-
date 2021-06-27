@@ -1,12 +1,13 @@
 package com.github.Karmel5950.HeroFightDaBai.UI;
 
+import Joggle.界面;
 import com.github.Karmel5950.HeroFightDaBai.Creature.勇者;
 import com.github.Karmel5950.HeroFightDaBai.HeroFightDaBai;
 import com.github.Karmel5950.HeroFightDaBai.Util.工具实例;
 
 import java.util.Scanner;
 
-public class 开始界面 implements 界面{
+public class 开始界面 implements 界面 {
     @Override
     public 界面 打开界面() {
         System.out.println("进入开始界面");
@@ -31,6 +32,6 @@ public class 开始界面 implements 界面{
 
     public static void 初始化(){
         HeroFightDaBai.勇者 = new 勇者();
-        System.out.println("勇者诞生了，他的生命值为:" + HeroFightDaBai.勇者.get生命值最大值());
+        System.out.println("勇者诞生了，他的生命值为:" + HeroFightDaBai.勇者.获取最大生命值());
     }
 }

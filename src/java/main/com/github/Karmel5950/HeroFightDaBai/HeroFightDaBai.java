@@ -2,7 +2,7 @@ package com.github.Karmel5950.HeroFightDaBai;
 
 import com.github.Karmel5950.HeroFightDaBai.Creature.勇者;
 import com.github.Karmel5950.HeroFightDaBai.UI.用户界面;
-import com.github.Karmel5950.HeroFightDaBai.UI.界面;
+import Joggle.界面;
 
 public class HeroFightDaBai {
     static 界面 界面导向 = 用户界面.开始界面;
@@ -21,6 +21,7 @@ public class HeroFightDaBai {
         界面导向 = 输入界面.打开界面();
         界面导向历史 = 输入界面;
     }
+
 
 
 }

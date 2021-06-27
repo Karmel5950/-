@@ -1,10 +1,11 @@
 package com.github.Karmel5950.HeroFightDaBai.UI;
 
+import Joggle.界面;
 import com.github.Karmel5950.HeroFightDaBai.Util.工具实例;
 
 import java.util.Scanner;
 
-public class 主界面 implements 界面{
+public class 主界面 implements 界面 {
     @Override
     public 界面 打开界面() {
         System.out.println("进入主界面");

@@ -13,5 +13,20 @@ public class 装备 implements Serializable {
         this.名字 = 名字;
     }
 
+    private int 攻击力;
+    private int 防御力;
+    private int 生命值;
+    private int 等级;
+
+    public 装备(int 等级) {
+        this.等级 = 等级;
+        this.攻击力 = 5;
+        this.防御力 = 2;
+        this.生命值 = 10;
+
+
+    }
+
+
 
 }

@@ -1,7 +1,5 @@
 package com.github.Karmel5950.HeroFightDaBai.Battle;
 
-import com.github.Karmel5950.HeroFightDaBai.Creature.生物;
-
 public class 战斗 {
     public static void 战斗中() throws InterruptedException {
         /*生物 勇者 = new 生物();

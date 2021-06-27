@@ -14,6 +14,6 @@ public class 用户界面 {
     public static 开始界面 开始界面 = new 开始界面();
     public static 装备界面 装备界面 = new 装备界面();
     public static 卸下装备界面 卸下装备界面 = new 卸下装备界面();
-
-
+    public static 消耗品界面 消耗品界面 = new 消耗品界面();
+    public static 装备的界面 装备的界面 = new 装备的界面();
 }

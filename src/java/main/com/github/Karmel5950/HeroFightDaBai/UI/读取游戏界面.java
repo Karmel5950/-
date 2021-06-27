@@ -1,12 +1,12 @@
 package com.github.Karmel5950.HeroFightDaBai.UI;
 
+import Joggle.界面;
 import com.github.Karmel5950.HeroFightDaBai.Util.工具实例;
 import com.github.Karmel5950.HeroFightDaBai.save.存档;
 
-import java.io.IOException;
 import java.util.Scanner;
 
-public class 读取游戏界面 implements 界面{
+public class 读取游戏界面 implements 界面 {
     存档 存档1 = new 存档();
     @Override
     public 界面 打开界面() throws Exception {

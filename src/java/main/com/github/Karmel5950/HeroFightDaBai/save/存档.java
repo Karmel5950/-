@@ -1,5 +1,6 @@
 package com.github.Karmel5950.HeroFightDaBai.save;
 
+import Joggle.I生物;
 import com.github.Karmel5950.HeroFightDaBai.Creature.勇者;
 import com.github.Karmel5950.HeroFightDaBai.Creature.生物;
 import com.github.Karmel5950.HeroFightDaBai.HeroFightDaBai;

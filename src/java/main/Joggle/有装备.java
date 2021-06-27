@@ -1,4 +1,4 @@
-package com.github.Karmel5950.HeroFightDaBai.Creature;
+package Joggle;
 
 import com.github.Karmel5950.HeroFightDaBai.Armor.装备;
 

@@ -1,50 +1,66 @@
 package com.github.Karmel5950.HeroFightDaBai.Creature;
 
+import Joggle.有背包;
+import Joggle.有装备;
+import Joggle.物品;
 import com.github.Karmel5950.HeroFightDaBai.Armor.*;
+import com.github.Karmel5950.HeroFightDaBai.Article.消耗品;
+import com.github.Karmel5950.HeroFightDaBai.Util.工具实例;
 
-
-import java.io.Serializable;
-
-public class 勇者 extends 生物 implements 有装备 {
+public class 勇者 extends 生物 implements 有装备, 有背包 {
 
     装备 武器 = new 武器();
     装备 头盔 = 装备.空装备;
     装备 护甲 = 装备.空装备;
     装备 手套 = 装备.空装备;
     装备 鞋子 = 装备.空装备;
+    物品[] 道具 = {工具实例.空物品};
+
+    public void 初始化(){
+        super.初始化();
+        for (int i=0; i < 获取背包上限(); i++){
+            物品[i] = 工具实例.空物品;
+        }
+
+
+}
+
+
+
+    物品[] 物品 = new 物品[获取背包上限()];
 
     @Override
-    public int get初始生命值() {
+    public int 获取初始生命值() {
         return 100;
     }
 
     @Override
-    public int get初始攻击力() {
+    public int 获取初始攻击力() {
         return 10;
     }
 
     @Override
-    public int get初始防御力() {
+    public int 获取初始防御力() {
         return 5;
     }
 
     @Override
-    public int get生命值成长() {
+    public int 获取生命值成长() {
         return 10;
     }
 
     @Override
-    public int get攻击力成长() {
+    public int 获取攻击力成长() {
         return 2;
     }
 
     @Override
-    public int get防御力成长() {
+    public int 获取防御力成长() {
         return 1;
     }
 
     @Override
-    public String get初始名字() {
+    public String 获取名字() {
         return "勇者";
     }
 
@@ -113,5 +129,29 @@ public class 勇者 extends 生物 implements 有装备 {
 
     public void set鞋子(装备 鞋子) {
         this.鞋子 = 鞋子;
+    }
+
+
+    @Override
+    public int 获取背包上限() {
+        return 5;
+    }
+
+    @Override
+    public void 在背包内添加物品(Joggle.物品 物品) {
+
+    }
+
+
+    @Override
+    public 物品[] 获取物品() {
+        return 物品;
+    }
+
+    @Override
+    public void 在背包内丢弃物品(Joggle.物品 物品) {
+
+
+
     }
 }
