@@ -14,7 +14,7 @@ public class 勇者 extends 生物 implements 有装备, 有背包 {
     装备 护甲 = 装备.空装备;
     装备 手套 = 装备.空装备;
     装备 鞋子 = 装备.空装备;
-    物品[] 道具 = {工具实例.空物品};
+    物品[] 物品 = new 物品[获取背包上限()];
 
     public void 初始化(){
         super.初始化();
@@ -24,10 +24,6 @@ public class 勇者 extends 生物 implements 有装备, 有背包 {
 
 
 }
-
-
-
-    物品[] 物品 = new 物品[获取背包上限()];
 
     @Override
     public int 获取初始生命值() {
@@ -139,7 +135,13 @@ public class 勇者 extends 生物 implements 有装备, 有背包 {
 
     @Override
     public void 在背包内添加物品(Joggle.物品 物品) {
-
+        //1.检查背包内是否有空物品
+        for (int i = 0 ; i < this.获取背包上限();i++){
+            if (this.物品[i] == 工具实例.空物品){
+                //2.若有空物品则将空物品替换为输入物品，若否则什么都不做
+                this.物品[i] = 物品;
+            }
+        }
     }
 
 
@@ -150,8 +152,12 @@ public class 勇者 extends 生物 implements 有装备, 有背包 {
 
     @Override
     public void 在背包内丢弃物品(Joggle.物品 物品) {
-
-
-
+        //1.检查背包是否有输入物品
+        for (int i = 0 ; i < this.获取背包上限();i++){
+            if (this.物品[i] == 物品){
+                //2.如果有则将对应物品替换为空物品，若否则什么都不做
+                this.物品[i] = 工具实例.空物品;
+            }
+        }
     }
 }
